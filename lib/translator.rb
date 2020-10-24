@@ -1,6 +1,6 @@
 require 'yaml'
-def load_library(word)
-  library = YAML.load_file(word)
+def load_library(path)
+  library = YAML.load_file(path)
 { 
       'happy' => {
          :english => ":)",
@@ -57,14 +57,20 @@ def load_library(word)
    }
 end
 
+def team_colors(team)
+  if team == "Charlotte Hornets" 
+    return game_hash[:away][:colors]
+  else return game_hash[:home][:colors]
+  end
+end
 
-def get_english_meaning(word, emoticon)
-  load_library.each(word)
+def get_english_meaning(path, emoticon)
+  load_library.each[path]
     
 end
 
 	
-def get_japanese_emoticon(word, emoticon)
-  load_library.each(word)
+def get_japanese_emoticon(path, emoticon)
+  load_library(path)
   
 end
