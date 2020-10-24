@@ -70,6 +70,6 @@ end
 
 	
 def get_japanese_emoticon(word, emoticon)
-  load_library(word)
+  load_library.each(word)
   
 end
