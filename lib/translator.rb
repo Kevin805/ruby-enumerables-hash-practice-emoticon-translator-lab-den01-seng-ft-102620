@@ -63,13 +63,13 @@ def team_colors(team)
   else return game_hash[:home][:colors]
   end
 end
-def get_english_meaning(path, emoticon)
-  load_library(path)
+def get_english_meaning(word, emoticon)
+  load_library.each(word)
     
 end
 
 	
-def get_japanese_emoticon(path, emoticon)
-  load_library(path)
+def get_japanese_emoticon(word, emoticon)
+  load_library(word)
   
 end
