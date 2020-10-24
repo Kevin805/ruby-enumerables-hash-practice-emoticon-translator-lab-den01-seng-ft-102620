@@ -65,7 +65,8 @@ def team_colors(team)
 end
 
 def get_english_meaning(path, emoticon)
-  load_library.each[path]
+  load_library(path)
+   path.each[emoticon] = 
     
 end
 
