@@ -1,6 +1,6 @@
 require 'yaml'
 def load_library(path)
-  library = YAML.load_file(path)
+  load_library = YAML.load_file(path)
 { 
       'happy' => {
          :english => ":)",
