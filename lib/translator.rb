@@ -57,12 +57,7 @@ def load_library(word)
    }
 end
 
-def team_colors(team)
-  if team == "Charlotte Hornets" 
-    return game_hash[:away][:colors]
-  else return game_hash[:home][:colors]
-  end
-end
+
 def get_english_meaning(word, emoticon)
   load_library.each(word)
     
